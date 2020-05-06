@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 
 import './styles.css';
 import * as selectors from '../../reducers';
-import * as actions from '../../actions/happyBirthday';
+//import * as actions from '../../actions/happyBirthday';
+import * as actions from '../../actions/petOwners';
 
 
 const SayHBButton = ({ onClick, isHidden = false }) => (
@@ -25,7 +26,7 @@ export default connect(
   }),
   dispatch => ({
     onClick() {
-      dispatch(actions.sayHappyBirthday());
+      dispatch(actions.startFetchingPetOwners());
     },
   })
 )(SayHBButton);
