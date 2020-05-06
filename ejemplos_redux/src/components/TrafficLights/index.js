@@ -1,3 +1,4 @@
+/* eslint-disable */
 import range from 'lodash/range';
 import React from 'react';
 import { connect } from 'react-redux';
